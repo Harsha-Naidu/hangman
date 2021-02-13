@@ -41,7 +41,7 @@ $(document).ready(()=>{
 
         if(word.join('') == dash.join('') && wrongChar < 6) { 
             success.play(); 
-            setTimeout(()=>{
+            setTimeout(()=>{ // Display an alert box after 3 seconds (3000 milliseconds):
                 if(confirm("Congratulations! You win!") ){
                     reload(); 
                     wrongChar = 0; 
